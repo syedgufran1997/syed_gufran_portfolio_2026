@@ -25,7 +25,6 @@ export default function Experience() {
                   style={{
                     display: "grid",
                     gridTemplateColumns: "44px 1fr",
-                    // gap: 20,
                     paddingBlock: 28,
                     borderBottom:
                       index === t.experience.items.length - 1
