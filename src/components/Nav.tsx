@@ -8,8 +8,8 @@ export default function Nav() {
   const [active, setActive] = useState<string>("");
 
   const links = [
-    { id: "work", label: t.nav.work },
     { id: "experience", label: t.nav.experience },
+    { id: "work", label: t.nav.work },
     { id: "skills", label: t.nav.skills },
     { id: "contact", label: t.nav.contact },
   ];
@@ -40,7 +40,7 @@ export default function Nav() {
         position: "sticky",
         top: 0,
         zIndex: 20,
-        background: "rgba(255, 255, 255, 0.85)",
+        background: "rgba(255, 255, 255, 0.33)",
         backdropFilter: "blur(10px)",
         borderBottom: "1px solid var(--line)",
       }}
@@ -53,14 +53,14 @@ export default function Nav() {
           justifyContent: "space-between",
           gap: 16,
           minHeight: 64,
-          paddingBlock: 12,
+          paddingBlock: 10,
         }}
       >
         <a
           href="#top"
           style={{
             fontWeight: 800,
-            fontSize: "1.05rem",
+            fontSize: "1.5rem",
             textDecoration: "none",
           }}
         >
@@ -88,29 +88,31 @@ export default function Nav() {
             </a>
           ))}
 
-          <button
-            onClick={toggle}
-            aria-label="Switch language"
-            style={{
-              background: "none",
-              border: "1px solid var(--line)",
-              padding: "6px 12px",
-              fontSize: "0.85rem",
-              cursor: "pointer",
-              color: "var(--ink)",
-            }}
-          >
-            {lang === "en" ? "العربية" : "English"}
-          </button>
+          <div className="navButtons">
+            <button
+              onClick={toggle}
+              aria-label="Switch language"
+              style={{
+                background: "none",
+                border: "1px solid var(--line)",
+                padding: "6px 12px",
+                fontSize: "0.85rem",
+                cursor: "pointer",
+                color: "var(--ink)",
+              }}
+            >
+              {lang === "en" ? "العربية" : "English"}
+            </button>
 
-          <a
-            href={shared.resumeHref}
-            download
-            className="btn btn-primary "
-            style={{ padding: "8px 16px", fontSize: "0.88rem" }}
-          >
-            {t.nav.resume}
-          </a>
+            <a
+              href={shared.resumeHref}
+              download
+              className="btn btn-primary "
+              style={{ padding: "8px 16px", fontSize: "0.88rem" }}
+            >
+              {t.nav.resume}
+            </a>
+          </div>
         </div>
       </nav>
     </motion.header>

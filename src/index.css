@@ -178,9 +178,16 @@ section:first-of-type {
   justify-content: flex-end;
 }
 
+.navButtons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
 @media (max-width: 560px) {
   .nav-links {
-    gap: 16px;
+    gap: 10px;
   }
   .nav-links a,
   .nav-links button {

@@ -25,12 +25,22 @@ export default function Experience() {
                   style={{
                     display: "grid",
                     gridTemplateColumns: "44px 1fr",
-                    gap: 20,
+                    // gap: 20,
                     paddingBlock: 28,
-                    borderBottom: index === t.experience.items.length - 1 ? "none" : "1px solid var(--line)",
+                    borderBottom:
+                      index === t.experience.items.length - 1
+                        ? "none"
+                        : "1px solid var(--line)",
                   }}
                 >
-                  <span className="mono" style={{ color: "var(--muted)", fontSize: "0.85rem", paddingTop: 4 }}>
+                  <span
+                    className="mono"
+                    style={{
+                      color: "var(--muted)",
+                      fontSize: "0.85rem",
+                      paddingTop: 4,
+                    }}
+                  >
                     {String(index + 1).padStart(2, "0")}
                   </span>
                   <div>
@@ -46,11 +56,22 @@ export default function Experience() {
                       <h3 style={{ fontSize: "1.1rem", fontWeight: 700 }}>
                         {role.role} {t.experience.atWord} {role.company}
                       </h3>
-                      <span className="mono" style={{ fontSize: "0.8rem", color: "var(--muted)" }}>
+                      <span
+                        className="mono"
+                        style={{ fontSize: "0.8rem", color: "var(--muted)" }}
+                      >
                         {dates.start} – {end}
                       </span>
                     </div>
-                    <p style={{ color: "var(--muted)", fontSize: "0.88rem", marginTop: 4 }}>{role.location}</p>
+                    <p
+                      style={{
+                        color: "var(--muted)",
+                        fontSize: "0.88rem",
+                        marginTop: 4,
+                      }}
+                    >
+                      {role.location}
+                    </p>
                     <ul style={{ marginTop: 14 }}>
                       {role.points.map((point, i) => (
                         <li
@@ -63,7 +84,11 @@ export default function Experience() {
                             maxWidth: 620,
                           }}
                         >
-                          <span style={{ color: "var(--accent)", flexShrink: 0 }}>—</span>
+                          <span
+                            style={{ color: "var(--accent)", flexShrink: 0 }}
+                          >
+                            —
+                          </span>
                           <span>{point}</span>
                         </li>
                       ))}

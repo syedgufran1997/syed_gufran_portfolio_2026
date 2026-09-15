@@ -155,17 +155,6 @@ export const content: Record<Lang, Content> = {
           ],
         },
         {
-          name: "Design Cafe — Designer Dashboard",
-          client: "Home-interior design platform, Bengaluru",
-          description:
-            "A centralized dashboard for designers to manage projects, clients, and workflows.",
-          points: [
-            "Built reusable Next.js components and layouts for a consistent interface.",
-            "Implemented secure route authentication with Next.js, GraphQL, and Apollo.",
-            "Integrated server-side APIs via Next.js and Node.js.",
-          ],
-        },
-        {
           name: "Alignment Healthcare",
           client: "US healthcare company",
           description:
@@ -174,6 +163,17 @@ export const content: Record<Lang, Content> = {
             "Developed reusable React.js components and dynamic forms.",
             "Refactored for performance, improving load times and maintainability.",
             "Worked directly with backend teams and clients to scope enhancements.",
+          ],
+        },
+        {
+          name: "Design Cafe — Designer Dashboard",
+          client: "Home-interior design platform, Bengaluru",
+          description:
+            "A centralized dashboard for designers to manage projects, clients, and workflows.",
+          points: [
+            "Built reusable Next.js components and layouts for a consistent interface.",
+            "Implemented secure route authentication with Next.js, GraphQL, and Apollo.",
+            "Integrated server-side APIs via Next.js and Node.js.",
           ],
         },
         {
@@ -336,17 +336,6 @@ export const content: Record<Lang, Content> = {
           ],
         },
         {
-          name: "Design Cafe — لوحة تحكم المصممين",
-          client: "منصة تصميم داخلي، بنغالورو",
-          description:
-            "لوحة تحكم مركزية للمصممين لإدارة المشاريع والعملاء وسير العمل.",
-          points: [
-            "بناء مكوّنات وتخطيطات Next.js قابلة لإعادة الاستخدام لواجهة متّسقة.",
-            "تنفيذ مصادقة آمنة للمسارات باستخدام Next.js وGraphQL وApollo.",
-            "دمج واجهات برمجية من جانب الخادم عبر Next.js وNode.js.",
-          ],
-        },
-        {
           name: "Alignment Healthcare",
           client: "شركة رعاية صحية أمريكية",
           description:
@@ -355,6 +344,17 @@ export const content: Record<Lang, Content> = {
             "تطوير مكوّنات React.js ونماذج ديناميكية قابلة لإعادة الاستخدام.",
             "إعادة الهيكلة لتحسين الأداء وسرعة التحميل وقابلية الصيانة.",
             "العمل المباشر مع فرق الخلفية والعملاء لتحديد نطاق التحسينات.",
+          ],
+        },
+        {
+          name: "Design Cafe — لوحة تحكم المصممين",
+          client: "منصة تصميم داخلي، بنغالورو",
+          description:
+            "لوحة تحكم مركزية للمصممين لإدارة المشاريع والعملاء وسير العمل.",
+          points: [
+            "بناء مكوّنات وتخطيطات Next.js قابلة لإعادة الاستخدام لواجهة متّسقة.",
+            "تنفيذ مصادقة آمنة للمسارات باستخدام Next.js وGraphQL وApollo.",
+            "دمج واجهات برمجية من جانب الخادم عبر Next.js وNode.js.",
           ],
         },
         {
