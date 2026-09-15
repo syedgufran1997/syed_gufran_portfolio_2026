@@ -1,4 +1,7 @@
 # Portfolio — v2 (minimal, bilingual)
+<img width="1470" height="882" alt="Screenshot 2026-09-15 at 7 46 19 PM" src="https://github.com/user-attachments/assets/e376ed06-0d85-4c1a-8c75-97b021445bff" />
+<img width="428" height="715" alt="Screenshot 2026-09-15 at 7 47 05 PM" src="https://github.com/user-attachments/assets/4463a146-ceaf-4a98-95b4-0f1681e6b661" />
+
 
 React + TypeScript + Vite + Framer Motion, with English/Arabic i18n and RTL support.
 
